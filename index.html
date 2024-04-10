@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cars</title>
-    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <div class="nav__header">
+                <div class="logo">
+                    <div class="tittle">
+                        <h1 class="tittle">CarHub</h1>
+                    </div>
+                    <div class="subtittle">
+                        Cars for Rent in Boston
+                    </div>
+                </div>
+                <div class="navbar">
+                    <img src="src/Burger.png" alt="" class="burger" id="burger" onclick="burgerClick()">
+                    <ul class="nav__list" id="menu">
+                        <li class="nav__item"><a href="#About" class="hyper" onclick="menuClick()">About Us</a></li>
+                        <li class="nav__item"><a href="pets.html" class="hyper">Our cars</a></li>
+                        <li class="nav__item"><a href="#Help" class="hyper" onclick="menuClick()">Help the shelter</a></li>
+                        <li class="nav__item"><a href="#Contacts" class="hyper" onclick="menuClick()">Contacts</a></li>
+                    </ul>
+                </div>      
+            </div>
+            <div class="start__screen">
+                <div class="content">
+                    <div class="heading">
+                        Not only people need a house
+                    </div>
+                    <div class="subheading">
+                        We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!
+                    </div>
+                    <a class="start_button" href="#Pets">Make a Rent</a>
+                </div>
+                <div class="screen__img">
+                    <img class="screen__img__img" src="src/start.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
