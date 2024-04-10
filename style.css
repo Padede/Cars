@@ -216,3 +216,142 @@ color: #FFFFFF;
     max-width: 430px;
     padding-bottom: 25px;
 }
+
+.pets {
+    background: #F6F6F6;
+}
+.pets__screen {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.pets__heading {
+    max-width: 400px;
+    text-align: center;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+.pets__content {
+    padding-bottom: 100px;
+}
+.pets__list {
+    display: flex;
+    align-items: center;
+}
+.arrow__left {
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    margin-right: 53px;
+}
+.pets__item {
+    text-align: center;
+    background: #FAFAFA;
+    border-radius: 9px;
+    width: 275px;
+    margin-right: 90px;
+}
+.pets__item:last-child{
+    margin-right: 53px;
+}
+.pets__item:hover .pets__learn{
+    background-color: #F1CDB3;
+    transition: 0.5s;
+    color: #F6F6F6;
+}
+.pets__img {
+    transition: all 1s ease-in-out;
+}
+
+
+.pets__tittle {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-top: 25px;
+    padding-bottom: 30px;
+}
+.pets__learn {
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    width: 187px;
+    height: 52px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background: #FAFAFA
+}
+
+.pets__learn:hover{
+    background-color: #F1CDB3;
+    transition: 0.5s;
+    color: #F6F6F6;
+}
+.arrow__right {
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+}
+.arrow__left:hover{
+    background-color: #F1CDB3;
+    transition: 0.5s;
+    color: #F6F6F6;
+    border-radius: 100px;
+}
+.arrow__right:hover{
+    background-color: #F1CDB3;
+    transition: 0.5s;
+    color: #F6F6F6;
+    border-radius: 100px;
+}
+.pets__button {
+    background: #F1CDB3;
+    border-radius: 100px;
+    border:none;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    max-width: 270px;
+    height: 52px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    
+}
+
+.pets__button:hover{
+    background-color: #c95909;
+    transition: 0.9s;
+    color: #F6F6F6;
+}
