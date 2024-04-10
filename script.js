@@ -181,3 +181,50 @@ function Prev(){
 }
 
 Next();
+
+
+const callButton = document.querySelector('.popup-button');
+const popup = document.querySelector('.popup');
+const closeButton = popup.querySelector('.close-button');
+let popupttittle=document.querySelector('.popup__title');
+let popupimg=document.querySelector('.popup__image');
+let popuptype=document.querySelector('.popup__type');
+let popuptext=document.querySelector('.popup__text');
+let popupage=document.querySelector('.popup__agep');
+let popupinoc=document.querySelector('.popup__inoculationsp');
+let popupdiseases=document.querySelector('.popup__diseasesp');
+let popupparasite=document.querySelector('.popup__parasitesp');
+
+
+popupToggle = (t) => {
+  popup.classList.toggle('popup_opened');
+  if (popup.classList.contains('popup_opened')){
+    popupttittle.innerHTML=t.innerHTML;
+    for (let i=0;i<8;i++){
+      if (data[i].name==t.innerHTML) {
+        popupimg.src=data[i].img;
+        popuptype.innerHTML=data[i].type + " - " + data[i].breed;
+        popuptext.innerHTML=data[i].description;
+        popupage.innerHTML= " " + data[i].age;
+        popupinoc.innerHTML= " " + data[i].inoculations;
+        popupdiseases.innerHTML= " " + data[i].diseases;
+        popupparasite.innerHTML= " " + data[i].parasites;
+      }
+  }
+  }
+}
+
+closeButton.addEventListener('click', popupToggle);
+
+closeOnBlack = (event) => {
+  if (event.target === event.currentTarget) popupToggle();
+}
+popup.addEventListener('click', closeOnBlack);
+
+function menuClick(){
+  menu.style.transform="translateX(100%)";
+  burger.style.transform='rotate(0deg)';
+  menu.classList.remove("showMenu");
+  document.body.style.overflow = "auto";
+  document.body.style.userSelect = "auto";
+}
