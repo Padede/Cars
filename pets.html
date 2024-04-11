@@ -13,24 +13,85 @@
             <div class="nav__header">
                 <div class="logo">
                     <div class="tittle">
-                        <a href="index.html"><h1 class="tittle">Cozy House</h1></a> 
+                        <a href="index.html"><h1 class="tittle">CarHub</h1></a> 
                     </div>
                     <div class="subtittle">
-                        Shelter for pets in Boston
+                        Cars for Rent in Boston
                     </div>
                 </div>
                 <div class="navbar">
                     <img src="src/Burger-pets.png" alt="" class="burger" id="burger" onclick="burgerClick()">
                     <ul class="nav__list" id="menu">
-                        <li class="nav__item"><a href="index.html" class="hyper" onclick="menuClick()">About the Shelter</a></li>
-                        <li class="nav__item"><a href="pets.html" class="hyper" onclick="menuClick()">Our pets</a></li>
-                        <li class="nav__item"><a href="index.html#Help" class="hyper" onclick="menuClick()">Help the shelter</a></li>
+                        <li class="nav__item"><a href="index.html" class="hyper" onclick="menuClick()">About Us</a></li>
+                        <li class="nav__item"><a href="pets.html" class="hyper" onclick="menuClick()">Our cars</a></li>
+                        <li class="nav__item"><a href="index.html#Help" class="hyper" onclick="menuClick()">Why we are</a></li>
                         <li class="nav__item"><a href="#Contacts" class="hyper" onclick="menuClick()">Contacts</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
+    <section class="pets" id="Pets">
+        <div class="container">
+            <div class="pets__screen">
+                <div class="pets__heading">
+                    <h4 class="pets__heading">Our Cars<br>
+                        available for rent</h4> 
+                </div>
+                <div class="pets__content">
+                    <div class="pets__list">
+                        <div class="pets__item i1" onclick="popupToggle(t1)">
+                            <img class="pets__img img1" src="src/pets-katrine.png" alt="">
+                            <div class="pets__tittle t1" id="t1">Katrine</div>
+                            <button class="pets__learn">Learn more</button>
+                        </div>
+                        <div class="pets__item i2" onclick="popupToggle(t2)">
+                            <img class="pets__img img2" src="src/pets-jennifer.png" alt="">
+                            <div class="pets__tittle t2" id="t2">Jennifer</div>
+                            <button class="pets__learn">Learn more</button>
+                        </div>
+                        <div class="pets__item i3" onclick="popupToggle(t3)">
+                            <img class="pets__img img3" src="src/pets-woody.png" alt="">
+                            <div class="pets__tittle t3" id="t3">Woody</div>
+                            <button class="pets__learn">Learn more</button>
+                        </div>
+                        <div class="pets__item i4" onclick="popupToggle(t4)">
+                            <img class="pets__img img4" src="src/pets-sophia.png" alt="">
+                            <div class="pets__tittle t4" id="t4">Sophia</div>
+                            <button class="pets__learn">Learn more</button>
+                        </div>
+                        <div class="pets__item i5" onclick="popupToggle(t5)">
+                            <img class="pets__img img5" src="src/pets-timmy.png" alt="">
+                            <div class="pets__tittle t5" id="t5">Timmy</div>
+                            <button class="pets__learn">Learn more</button>
+                        </div>
+                        <div class="pets__item i6" onclick="popupToggle(t6)">
+                            <img class="pets__img img6" src="src/pets-charly.png" alt="">
+                            <div class="pets__tittle t6" id="t6">Charly</div>
+                            <button class="pets__learn">Learn more</button>
+                        </div>
+                        <div class="pets__item i7" onclick="popupToggle(t7)">
+                            <img class="pets__img img7" src="src/pets-scarlet.png" alt="">
+                            <div class="pets__tittle t7" id="t7">Scarlett</div>
+                            <button class="pets__learn">Learn more</button>
+                        </div>
+                        <div class="pets__item i8" onclick="popupToggle(t8)">
+                            <img class="pets__img img8" src="src/pets-freddie.png" alt="">
+                            <div class="pets__tittle t8" id="t8">Freddie</div>
+                            <button class="pets__learn">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="pets__navigation">
+                        <div class="prev__prev" id="prev__prev" onclick="First()">&lt;&lt;</div>
+                        <div class="prev" id="prev" onclick="Prev()">&lt;</div>
+                        <div class="current">1</div>
+                        <div class="next" id="next" onclick="Next()">></div>
+                        <div class="next__next" id="next__next" onclick="Last()">>></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer id="Contacts">
         <div class="container">
                 <div class="footer_screen">
@@ -60,7 +121,25 @@
                 </div>
         </div>
     </footer>
-    
+    <div class="popup">
+        <div class="popup__container">
+          <button type="button" class="close-button" style="cursor: pointer;"></button>
+          <img class="popup__image"
+           src="src/pets-katrine.png"
+           alt="A cute cat">
+           <div class="popup__info">
+            <h2 class="popup__title"></h2>
+            <div class="popup__type"></div>
+            <div class="popup__text"></div>
+            <ul class="popup__detail">
+                <li class="popup__age"><span class="popup__span">Age:</span><p style="display: inline;" class="popup__agep"></p></li>
+                <li class="popup__inoculations"><span class="popup__span">Inoculations:</span><p style="display: inline;" class="popup__inoculationsp"></p></li>
+                <li class="popup__diseases"><span class="popup__span">Diseases:</span><p style="display: inline;" class="popup__diseasesp"></p></li>
+                <li class="popup__parasites"><span class="popup__span">Parasites:</span><p style="display: inline;" class="popup__parasitesp"></p></li>
+            </ul>
+           </div>
+        </div>
+        </div>
     <script src="pets.js"></script>
 </body>
 </html>
