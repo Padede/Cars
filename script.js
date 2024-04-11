@@ -181,6 +181,26 @@ function Prev(){
 }
 
 Next();
+let menu=document.getElementById("menu");
+let menuItems=document.querySelectorAll(".nav__item")
+let burger=document.getElementById("burger");
+
+function burgerClick(){
+  if (menu.classList.contains("showMenu")) {
+    menu.style.transform="translateX(100%)";
+    burger.style.transform='rotate(0deg)';
+    menu.classList.remove("showMenu");
+    document.body.style.overflow = "auto";
+    document.body.style.userSelect = "auto";
+  } else {
+    menu.classList.add("showMenu");
+    menu.style.transform="translateX(0%)";
+    burger.style.transform='rotate(-90deg)';
+    document.body.style.overflow = "hidden";
+    document.body.style.userSelect = "none";
+  }
+}
+
 
 
 const callButton = document.querySelector('.popup-button');
